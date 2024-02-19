@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'font1';
+    src: url('./fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'font2';
+    src: url('./fonts/Inter-Medium.ttf');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+    overflow-x: hidden;
+}
+
+body{
+    background-color: rgb(238, 234, 234);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1288px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+body {
+    font-family: 'font2';
+}
+
+.open:hover {
+    -webkit-box-shadow: 1px 5px 11px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 1px 5px 11px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px 5px 11px 0px rgba(34, 60, 80, 0.2);
+}
+
+.isopen {
+    background-color: #6C5FBC;
+    width: 200px;
+    height: 20px;
+    transition: 0.3s;
+    transform: translateX(0);
+    height: 100vh;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.close {
+    background-color: #6C5FBC;
+    width: 20px;
+    height: 20px;
+    transition: 0.3s;
+    transform: translateX(-200px);
+    border-top-right-radius: 20px;
+}
+
+a,
+.pp {
+    font-family: 'inter';
+}
+
+#first {
+    background-image: url('./assets/img/photo_2024-02-17_19-51-18.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lorem {
+    list-style-type: disc;
+}
